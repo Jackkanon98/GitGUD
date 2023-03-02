@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class Student {
 
@@ -22,6 +23,13 @@ public class Student {
     }
     public void setName(String name){
         this.name = name;
+    }
+
+    public static void main(String[] args){
+        Scanner console = new Scanner(System.in);
+        System.out.println("What is your name?");
+        String name = console.next();
+        System.out.printf("Hello, %s!\n", name);
     }
 
 }
